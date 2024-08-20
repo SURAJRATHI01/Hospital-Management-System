@@ -1,50 +1,84 @@
-# Hospital-Management-System
+# Hospital Management System
 
-Introduction Hospital Management System
-The Hospital Management System is a web-based application designed to streamline the management of medical practices, providing a comprehensive platform for handling patient records, doctor information, appointment scheduling, and common administrative tasks. Built on the Flask framework with RESTful API endpoints, this system offers a modern and efficient solution for healthcare providers to organize their operations seamlessly.
+Hospital management project craerted in python for the summer python course at uis.
 
-Key Features:
+## Getting Started
 
-Patient Management: Efficiently manage patient records, including personal information, medical history, and appointments. With dedicated endpoints for creating, updating, and retrieving patient data, healthcare providers can easily access vital patient information.
+Instruction
 
-Doctor Management: Maintain a database of doctors, including their specialties, contact details, and availability. The system allows for the creation, modification, and retrieval of doctor profiles, facilitating effective communication and coordination among medical staff.
+```sh
+python app.py
+```
 
-Appointment Scheduling: Streamline appointment scheduling processes with intuitive features for booking, rescheduling, and canceling appointments. The system provides a user-friendly interface for patients to request appointments and for administrators to manage appointment calendars.
 
-Common Functionalities: In addition to patient and doctor management, the system includes common functionalities such as authentication, authorization, and error handling. These features ensure the security and reliability of the application while providing a seamless user experience.
 
-Technologies Used:
+## Configure
 
-Flask Framework: The application is built using the Flask framework, a lightweight and modular framework for building web applications in Python. Flask provides the foundation for creating RESTful APIs and serving dynamic web content.
+```json
+{
+  "database": "database.db",
+  "port": 5000,
+  "host": "127.0.0.1"
+}
+```
+## documentation
+[Click here to view documentation](https://documenter.getpostman.com/view/457459/hospitalmanagementsystem/2HQup9)
 
-Flask-Restful: To simplify the development of RESTful APIs, the application leverages Flask-Restful, an extension for Flask that provides tools for quickly building API endpoints.
 
-JSON Configuration: Configuration settings such as host and port are stored in a JSON file, allowing for easy customization and deployment of the application.
 
-Code Explanation:
-This Python code sets up a Flask web application with RESTful API endpoints for managing patients, doctors, appointments, and common functionalities. Here’s a breakdown of what each part of the code does:
+## screenshot
 
-Imports:
+<a href="../../" target="_blank"><img src="https://raw.githubusercontent.com/tushariscoolster/HospitalManagementSystem/master/1.png" height="300"></a>
+<a href="../../" target="_blank"><img src="https://raw.githubusercontent.com/tushariscoolster/HospitalManagementSystem/master/2.png" height="300"></a>
+<a href="../../" target="_blank"><img src="https://raw.githubusercontent.com/tushariscoolster/HospitalManagementSystem/master/3.png" height="300"></a>
+<a href="../../" target="_blank"><img src="https://raw.githubusercontent.com/tushariscoolster/HospitalManagementSystem/master/4.png" height="300"></a>
+<a href="../../" target="_blank"><img src="https://raw.githubusercontent.com/tushariscoolster/HospitalManagementSystem/master/5.png" height="300"></a>
+<a href="../../" target="_blank"><img src="https://raw.githubusercontent.com/tushariscoolster/HospitalManagementSystem/master/6.png" height="300"></a>
+<a href="../../" target="_blank"><img src="https://raw.githubusercontent.com/tushariscoolster/HospitalManagementSystem/master/7.png" height="300"></a>
 
-Flask: This is the main Flask class, used to create the Flask web application.
-send_from_directory: A Flask function for serving static files.
-render_template: A Flask function for rendering HTML templates.
-Flask-Restful: An extension for Flask that adds support for quickly building REST APIs.
-Various custom modules (Patients, Patient, Doctors, Doctor, Appointments, Appointment, Common) from the package directory, which presumably contain the implementations for handling different resources in the API.
-json: For working with JSON data.
-Loading configuration:
 
-The code loads configuration settings from a JSON file named config.json using the json.load() function. These settings likely include the host and port on which the Flask application should run.
-Creating the Flask application and API:
 
-An instance of the Flask class is created with the name app.
-An instance of the Flask-Restful Api class is created with the app instance.
-Adding RESTful resources:
+## Contributing
 
-RESTful resources for managing patients (Patients, Patient), doctors (Doctors, Doctor), appointments (Appointments, Appointment), and common functionalities (Common) are added to the API using the api.add_resource() method.
-Routes:
+Open an issue first to discuss potential changes/additions. If you have questions with the guide, feel free to leave them as issues in the repository. If you find a typo, create a pull request. The idea is to keep the content up to date and use github’s native feature to help tell the story with issues and PR’s, which are all searchable via google. Why? Because odds are if you have a question, someone else does too! You can learn more here at about how to contribute.
 
-A route for the root URL '/' is defined using the @app.route() decorator. When users visit the root URL, the application will serve the index.html file from the static directory.
-Running the application:
+*By contributing to this repository you are agreeing to make your content available subject to the license of this repository.*
 
-Finally, the application is run using the app.run() method. The debug=True parameter enables debug mode, and the host and port are set based on the values loaded from the config.json file.
+### Process
+    1. Discuss the changes in a GitHub issue.
+    2. Open a Pull Request, reference the issue, and explain the change and why it adds value.
+    3. The Pull Request will be evaluated and either merged or declined.
+
+## License
+
+ Use this guide. Attributions are appreciated._
+
+### Copyright
+
+Copyright (c) 2014-2015 [Tushar Borole](http://www.tusharborole.com)
+
+### (The MIT License)
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+##Last but not least
+This is made in India with love and passion  ʕ´•ᴥ•`ʔ
+
+<a href="../../" target="_blank"><img src="http://lonamowers-hrd.appspot.com/images/made_india.jpg" height="200"></a>
+
